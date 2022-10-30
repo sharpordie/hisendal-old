@@ -13,7 +13,7 @@ Note that the project uses an older version of Dadb and does not work with the l
 
 ### Change the device address
 
-Replace address in [AndroidScreenViewModel.kt](app\src\main\java\com\example\hisendal\AndroidScreenViewModel.kt).
+Replace address in [AndroidScreenViewModel.kt](app/src/main/java/com/example/hisendal/AndroidScreenViewModel.kt).
 
 ```kotlin
 private var address = mutableStateOf("192.168.X.XX")
@@ -21,12 +21,10 @@ private var address = mutableStateOf("192.168.X.XX")
 
 ### Force refreshing the adb keys
 
-Change refresh parameter in [Device.kt](app\src\main\java\com\example\hisendal\Device.kt).
+Change refresh parameter in [Device.kt](app/src/main/java/com/example/hisendal/Device.kt).
 
 ```kotlin
-
 handler = Dadb.discover(address, keygen(refresh = true))
-
 ```
 
 ## Gallery
